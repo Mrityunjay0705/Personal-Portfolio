@@ -139,29 +139,30 @@ button:hover{
         width: 90%;
     }
     .main-body > h2{
-        font-size: 5.5vw;
+        font-size: 7.5vw;
         line-height: 2vh;
         width: fit-content;
     }
-    .main-body > h3{font-size: 3vw;}
+    .main-body > h3{font-size: 5vw;}
 
     .main-body > p{
-        font-size: 2.5vw;
+        font-size: 4vw;
         width: 90%;
         margin-bottom: 0px;
     }
 
-    #projects-head{font-size: 3vw;}
+    #projects-head{font-size: 4vw;}
 
     .card{
-        width: 60vw;
+        width: 80vw;
         border-radius: 5px;
     }
-    .info{font-size: 1.5vw;}
+    .info{font-size: 3vw;}
 
     button{
-        padding: 2px;
+        padding: 5px;
         border-radius: 2px;
+        font-size: 3vw;
     }
 
     .profile-pic{
@@ -169,13 +170,13 @@ button:hover{
         margin-right: 0%;
         margin-bottom: 2px;
         border-radius: 50%;
-        width: 28vw;
+        width: 35vw;
         float: none;
         transform: none;
     }
 
     li{
-        font-size: 4vw;
+        font-size: 6vw;
         margin-right: 5px;
     }
 }

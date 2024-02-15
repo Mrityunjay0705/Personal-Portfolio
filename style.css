@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Jost:wght@300&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 3, 58);
+    color: white;
+}
+
+:root{
+    --para-font_size: 1vw;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 7%;
+}
+
+.main-body{
+    position: relative;
+    box-sizing: border-box;
+    width: 70%;
+    padding: 20px;
+}
+
+.main-body > h3,h2{font-family: 'Inter', sans-serif;}
+
+.main-body > h3{
+    font-weight: 600;
+    font-size: 1.5vw;
+}
+
+.main-body > h2{
+    font-weight: 800;
+    line-height: 44px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 3vw;
+    width: 70%;
+}
+
+.main-body > p{
+    font-family: 'Jost', sans-serif;
+    width: 70%;
+    font-size: 1.2vw;
+}
+
+h2 > span{color: rgb(51, 0, 255);}
+
+.profile-pic{
+    width: 15vw;
+    aspect-ratio: 1/1;
+    border-radius: 20px;
+    object-fit: cover;
+    float: right;
+    margin-right: 10%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 70%;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li{
+    font-size: 1.7vw;
+    margin-right: 10px;
+    cursor: pointer;
+    /* filter: drop-shadow(0px 0px 2px rgb(0, 115, 255)); */
+}
+
+ul > :nth-child(1) > a{color: rgb(0, 128, 255);}
+
+ul > :nth-child(2) > a{color: rgb(184, 184, 184);}
+
+#projects-head{
+    font-size: 2vw;
+    font-weight: 400px;
+}
+
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2%;
+}
+
+/* Projects Card CSS */
+.card{
+    font-family: 'Jost', sans-serif;
+    height: fit-content;
+    width: 22vw;
+    margin: 2px;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.502);
+}
+.info{
+    margin: 6%;
+    font-size: var(--para-font_size);
+}
+
+button{
+    background-color: rgb(0, 153, 255, 0.502);
+    border: 0px;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 2%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    font-size: var(--para-font_size);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+button:hover{
+    box-shadow: 0px 0px 10px 2px rgba(0, 149, 255, 0.548);
+    transform: scale(1.1);
+}
+
+/* Media queries */
+@media (max-width: 596px){
+    .container{margin-top: 20%;}
+
+    .main-body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        width: 90%;
+    }
+    .main-body > h2{
+        font-size: 5.5vw;
+        line-height: 2vh;
+        width: fit-content;
+    }
+    .main-body > h3{font-size: 3vw;}
+
+    .main-body > p{
+        font-size: 2.5vw;
+        width: 90%;
+        margin-bottom: 0px;
+    }
+
+    #projects-head{font-size: 3vw;}
+
+    .card{
+        width: 60vw;
+        border-radius: 5px;
+    }
+    .info{font-size: 1.5vw;}
+
+    button{
+        padding: 2px;
+        border-radius: 2px;
+    }
+
+    .profile-pic{
+        position: static;
+        margin-right: 0%;
+        margin-bottom: 2px;
+        border-radius: 50%;
+        width: 28vw;
+        float: none;
+        transform: none;
+    }
+
+    li{
+        font-size: 4vw;
+        margin-right: 5px;
+    }
+}
+
+@media (min-width: 596px) and (max-width:992px){
+    .container{margin-top: 15%;}
+
+    .main-body > h2{line-height: 10px;}
+
+    .main-body > p{font-size: 1.5vw;}  
+
+    .card{width: 20vw;}
+
+    .info{font-size: 1.5vw;}
+
+    li{
+        font-size: 2vw;
+        margin-right: 5px;
+    }
+}

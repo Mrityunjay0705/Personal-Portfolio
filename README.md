@@ -20,7 +20,7 @@ To view the website locally, simply clone this repository and open the `index.ht
 
 Feedback and contributions are welcome! If you have suggestions for improvements or would like to report a bug, please open an issue or submit a pull request.
 
-##Live Preview
+## Live Preview
 
 https://mrityunjay0705.github.io/Personal-Portfolio/
 
